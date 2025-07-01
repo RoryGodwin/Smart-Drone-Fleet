@@ -18,5 +18,5 @@ int main() {
     // Simulate landing
     drone.land();
 
-    return 0;)
+    return 0;
 }
