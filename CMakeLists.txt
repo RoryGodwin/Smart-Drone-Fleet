@@ -22,7 +22,7 @@ add_executable(main
     src/drone_controller/main.cpp
     src/drone_controller/Quadcopter.cpp
     src/vision/Camera.cpp
-    src/telemetry/TelemertyData.cpp
+    src/telemetry/TelemetryData.cpp
 )
 
 # Link OpenCV libraries to our executables

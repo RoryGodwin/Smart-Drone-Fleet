@@ -1,0 +1,3 @@
+/home/Smart-Drone-Fleet/build/CMakeFiles/main.dir
+/home/Smart-Drone-Fleet/build/CMakeFiles/edit_cache.dir
+/home/Smart-Drone-Fleet/build/CMakeFiles/rebuild_cache.dir
