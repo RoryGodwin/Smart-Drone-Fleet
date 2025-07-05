@@ -21,6 +21,7 @@ include_directories(
 add_executable(main
     src/drone_controller/main.cpp
     src/drone_controller/Quadcopter.cpp
+    src/drone_controller/DroneController.cpp
     src/vision/Camera.cpp
     src/telemetry/TelemetryData.cpp
 )

@@ -1,22 +1,23 @@
-#include "Quadcopter.h"
-#include "Camera.h"
+#include "Quadcopter.h"      // drone implementation
+#include "Camera.h"          // camera class for vision
 #include <iostream>
+#include "DroneController.h" //CLI controller microservices
 
-int main() {
-    // Create a Quadcopter instance with ID "A1"
-    Quadcopter drone("Drone-A1");
+#include <memory>
 
-    // Create a camera sensor instance
-    Camera cam;
+int main()
+{
 
-    // Simulate takeoff
-    drone.takeOff();
-    // Simulate flight 
-    drone.moveTo(37.7749, -122.4194, 100.0);
-    // capture image
-    cam.readData();
-    // Simulate landing
-    drone.land();
+    // create shared drone and camera instances
+    auto drone = std::make_shared<Quadcopter>("Drone-A1");
+    auto camera = std::make_shared<Camera>();
+
+    //initilize and start the CLI controller
+    DroneController controller(drone, camera);
+    // start input loop
+    controller.run();
 
     return 0;
 }
+
+

@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/drone_controller/DroneController.o: src/drone_controller/DroneController.cpp.o
+.PHONY : src/drone_controller/DroneController.o
+
+# target to build an object file
+src/drone_controller/DroneController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o
+.PHONY : src/drone_controller/DroneController.cpp.o
+
+src/drone_controller/DroneController.i: src/drone_controller/DroneController.cpp.i
+.PHONY : src/drone_controller/DroneController.i
+
+# target to preprocess a source file
+src/drone_controller/DroneController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.i
+.PHONY : src/drone_controller/DroneController.cpp.i
+
+src/drone_controller/DroneController.s: src/drone_controller/DroneController.cpp.s
+.PHONY : src/drone_controller/DroneController.s
+
+# target to generate assembly for a file
+src/drone_controller/DroneController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.s
+.PHONY : src/drone_controller/DroneController.cpp.s
+
 src/drone_controller/Quadcopter.o: src/drone_controller/Quadcopter.cpp.o
 .PHONY : src/drone_controller/Quadcopter.o
 
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/drone_controller/DroneController.o"
+	@echo "... src/drone_controller/DroneController.i"
+	@echo "... src/drone_controller/DroneController.s"
 	@echo "... src/drone_controller/Quadcopter.o"
 	@echo "... src/drone_controller/Quadcopter.i"
 	@echo "... src/drone_controller/Quadcopter.s"

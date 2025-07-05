@@ -97,10 +97,24 @@ CMakeFiles/main.dir/src/drone_controller/Quadcopter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/drone_controller/Quadcopter.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Smart-Drone-Fleet/src/drone_controller/Quadcopter.cpp -o CMakeFiles/main.dir/src/drone_controller/Quadcopter.cpp.s
 
+CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o: ../src/drone_controller/DroneController.cpp
+CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o -MF CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o.d -o CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o -c /home/Smart-Drone-Fleet/src/drone_controller/DroneController.cpp
+
+CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Smart-Drone-Fleet/src/drone_controller/DroneController.cpp > CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.i
+
+CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Smart-Drone-Fleet/src/drone_controller/DroneController.cpp -o CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.s
+
 CMakeFiles/main.dir/src/vision/Camera.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/vision/Camera.cpp.o: ../src/vision/Camera.cpp
 CMakeFiles/main.dir/src/vision/Camera.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/vision/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/vision/Camera.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/vision/Camera.cpp.o -MF CMakeFiles/main.dir/src/vision/Camera.cpp.o.d -o CMakeFiles/main.dir/src/vision/Camera.cpp.o -c /home/Smart-Drone-Fleet/src/vision/Camera.cpp
 
 CMakeFiles/main.dir/src/vision/Camera.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/main.dir/src/vision/Camera.cpp.s: cmake_force
 CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o: ../src/telemetry/TelemetryData.cpp
 CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o -MF CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o.d -o CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o -c /home/Smart-Drone-Fleet/src/telemetry/TelemetryData.cpp
 
 CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.i: cmake_force
@@ -129,6 +143,7 @@ CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/drone_controller/main.cpp.o" \
 "CMakeFiles/main.dir/src/drone_controller/Quadcopter.cpp.o" \
+"CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o" \
 "CMakeFiles/main.dir/src/vision/Camera.cpp.o" \
 "CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o"
 
@@ -137,6 +152,7 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/src/drone_controller/main.cpp.o
 main: CMakeFiles/main.dir/src/drone_controller/Quadcopter.cpp.o
+main: CMakeFiles/main.dir/src/drone_controller/DroneController.cpp.o
 main: CMakeFiles/main.dir/src/vision/Camera.cpp.o
 main: CMakeFiles/main.dir/src/telemetry/TelemetryData.cpp.o
 main: CMakeFiles/main.dir/build.make
@@ -195,7 +211,7 @@ main: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 main: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 main: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Smart-Drone-Fleet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
